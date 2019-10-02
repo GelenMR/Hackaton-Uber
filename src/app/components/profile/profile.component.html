@@ -1,119 +1,99 @@
 <div class="container">
 
-  <div class="col-md-4 offset-md-4 title">
+  <div class="col-sm-12 col-md-12 bg-dark text-light title">
     <h1>{{title}}</h1>
   </div>
 
-  <div class="col-md-4 offset-md-4 photograph-profile">
+  <div class="col-sm-12 col-md-12 photograph-profile">
     <img src="../assets/img-profile/photograph-profile.png" alt="Photo">
   </div>
 
-  <section class="row social-networks">
-    <div class="col-md-4 offset-md-4">
-      <h3>conecta tu cuenta con:</h3>
+  <section class="personal-and-social-network">
+    <!-- datos personales y redes sociales -->
+    <div class="row">
+      <!-- nombre -->
+      <div class="col-12">
+      <h6>Nombre</h6>
     </div>
-    <img src="../assets/img-profile/gmail-conect.png" alt="logo de gmail">
-    <img src="../assets/img-profile/facebook-conect.png" alt="logo de facebook">
+      <input class="col-6 form-control name-gmail" type="text" placeholder="Nombre de usuario">
+      <!-- botón gmail -->
+      <div class="col-2 offset-3 align-self-start">
+        <img class="gmail" src="../assets/img-profile/gmail-conect.png" alt="logo de gmail">
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- teléfono celular -->
+      <div class="col-12">
+      <h6>Teléfono</h6>
+    </div>
+      <input class="col-6 form-control celphone-o" type="text" placeholder="Número celular">
+      <!-- ó -->
+      <div class="col-1 offset-1 align-self-center">
+        <p>ó</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- correo -->
+      <div class="col-12">
+      <h6>email</h6>
+    </div>
+      <input class="col-6 form-control email-facebook" type="email" placeholder="Correo">
+      <!-- botón facebook -->
+      <div class="col-2 offset-3 align-self-end">
+        <img class="facebook" src="../assets/img-profile/facebook-conect.png" alt="logo de facebook">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+      <h6>contraseña</h6>
+    </div>
+      <input class="col-6 form-control pass" type="password" placeholder="contraseña">
+    </div>
   </section>
 
-  <section class="row">
-    <h3>Personal</h3>
-    <input class="form-control" type="text" placeholder="Nombre deusuario">
-    <input class="form-control" type="text" placeholder="Número celular">
-    <input class="form-control" type="email" placeholder="Correo">
-  </section>
+  <div class="offset-1 line"></div>
 
   <section class="row">
-    <h3>Preferencias</h3>
-
-    <!-- form check -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="air-conditioning">
-      <label class="form-check-label" for="air-conditioning">
-        Aire acondicionado
-      </label>
-    </div>
-
-    <div class="row btn-group btn-group-toggle" ngbRadioGroup name="radioBasic">
-      <label class="driver-gender">
-        <input type="radio" value="female"> Mujer
-      </label>
-      <label class="driver-gender">
-        <input type="radio" value="male"> Hombre
-      </label>
-      <label class="driver-gender">
-        <input type="radio" value="no-matter"> No me importa
-      </label>
-    </div>
-
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-      <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-    </div>
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-      <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
-    </div>
-
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="conversation">
-      <label class="form-check-label" for="conversation">
-        Conversación
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="road-route">
-      <label class="form-check-label" for="road-route">
-        Ruta por carretera
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="route-summary">
-      <label class="form-check-label" for="route-summary">
-        Resivir resumen del viaje a mi correo
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="special-assistance">
-      <label class="form-check-label" for="special-assistance">
-        Asistencia especial
-      </label>
+    <div class="col-12 trip">
+      <h3>Personaliza tu viaje</h3>
+      <p>Elije en qué condiciones quieres que se realice tu viaje.</p>
     </div>
 
     <!-- form switch -->
-    <div class="custom-control custom-switch">
+    <div class="col-12 custom-control custom-switch">
       <input type="checkbox" class="custom-control-input" id="air-conditioning">
       <label class="custom-control-label" for="air-conditioning">Aire acondicionado</label>
     </div>
-
-    <div class="row btn-group btn-group-toggle" ngbRadioGroup name="radioBasic">
-      <label class="driver-gender">
-        <input type="radio" value="female"> Mujer
-      </label>
-      <label class="driver-gender">
-        <input type="radio" value="male"> Hombre
-      </label>
-      <label class="driver-gender">
-        <input type="radio" value="no-matter"> No me importa
-      </label>
-    </div>
-
-    <div class="custom-control custom-switch">
+    <div class="col-12 custom-control custom-switch">
       <input type="checkbox" class="custom-control-input" id="conversation">
       <label class="custom-control-label" for="conversation">Conversación</label>
     </div>
-    <div class="custom-control custom-switch">
-      <input type="checkbox" class="custom-control-input" id="road-route">
-      <label class="custom-control-label" for="road-route">Ruta por carretera</label>
+    <div class="col-12 custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="special-assistance">
+      <label class="custom-control-label" for="special-assistance">Asistencia especial</label>
     </div>
-    <div class="custom-control custom-switch">
+    <div class="col-12 custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="help">
+      <label class="custom-control-label" for="help">ayuda para subir y bajar</label>
+    </div>
+    <div class="col-12 custom-control custom-switch">
       <input type="checkbox" class="custom-control-input" id="route-summary">
       <label class="custom-control-label" for="route-summary">Resivir resumen del viaje a mi correo
       </label>
     </div>
-    <div class="custom-control custom-switch">
-      <input type="checkbox" class="custom-control-input" id="special-assistance">
-      <label class="custom-control-label" for="special-assistance">Asistencia especial</label>
+
+    <div class="row btn-group btn-group-toggle" ngbRadioGroup name="radioBasic">
+      <label class="driver-gender">
+        <input type="radio" value="female"> Mujer
+      </label>
+      <label class="driver-gender">
+        <input type="radio" value="male"> Hombre
+      </label>
+      <label class="driver-gender">
+        <input type="radio" value="no-matter"> Da igual
+      </label>
     </div>
 
   </section>
