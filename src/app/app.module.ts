@@ -12,7 +12,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 import { AppRoutingModule } from './app-routing.module';
-
+import { FormsModule } from '@angular/forms';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +21,13 @@ import { AppRoutingModule } from './app-routing.module';
     RegisterComponent,
     LoginComponent,
     ProfileComponent,
-    MenuComponent
+    MenuComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
 
   ],
