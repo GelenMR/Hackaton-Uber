@@ -26,7 +26,7 @@ import { AppRoutingModule } from './app-routing.module';
     AngularFireModule.initializeApp(environment.firebase),
 
   ],
-  providers: [AngularFireDatabase, AngularFireDatabaseModule 
+  providers: [AngularFireDatabase, AngularFireDatabaseModule
   ],
   bootstrap: [AppComponent]
 })
