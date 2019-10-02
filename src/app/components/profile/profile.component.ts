@@ -12,4 +12,5 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
   }
 
+  title = 'Mi perfil';
 }
