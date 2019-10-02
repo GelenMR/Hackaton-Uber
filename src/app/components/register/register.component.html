@@ -1,67 +1,121 @@
-<!-- <section id="register" class="mb-5 mt-5">
-    <div class="container">
-        <div class="row">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-            <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
-                <div class="card_register">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <form #formRegister="ngForm" (ngSubmit)="onAddUser()">
-                                <h1 class="h3 mb-3 font-weight-normal">Register</h1>
-                                <div class="alert alert-danger" role="alert" *ngIf="isError">
-                                    {{msgError}}
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" [(ngModel)]="email" required minlength="8">
-                                </div>
-                                <div class="alert alert-danger" role="alert" *ngIf="email.touched && !email.valid">
-                                    <div *ngIf="email.errors.required">Email is required</div>
-                                    <div *ngIf="email.errors.minlength">Email must be at least 8 characters</div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="password" required minlength="5" maxlength="10">
-                                </div>
-                                <div class="alert alert-danger" role="alert" *ngIf="password.touched && !password.valid">
-                                    <div *ngIf="password.errors.required">Password is required</div>
-                                    <div *ngIf="password.errors.minlength">Password must be at least 5 characters</div>
-                                </div>
-                                <hr>
-                                <div class="form-group">
-                                    <h5>Seleccionar image:</h5>
-                                    <input type="file" accept=".png, .jpg" (change)="onUpload($event)">
-                                </div>
-                                <div class="progress">
-                                    <div [style.visibility]="(uploadPercent == 0) ? 'hidden' : 'visible'" class="progress-bar progress-bar-striped bg-success" role="progressbar" [style.width]="(uploadPercent | async) +'%'"> -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>User profile form requirement</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg=="
+    crossorigin="anonymous">
 
-<!-- <span class="progressText" *ngIf="urlImage | async">
-                            Ok!!</span> -->
-<!-- </div>
-                                </div>
-                                <br>
-                                <input #imageUser type="hidden" [value]="urlImage | async">
-                                <button *ngIf="urlImage | async; else btnDisabled" type="submit" class="btn btn-lg btn-primary btn-block">Register</button>
-                                <ng-template #btnDisabled>
-                                    <button type="submit" disabled=true class="btn btn-lg btn-secondary btn-block">Register</button>
-                                </ng-template>
-                                <div class="form-group">
-                                    <a routerLink="/user/login" class="form-control login-user">Do you have account?</a>
-                                </div>
-                                <div class="form-group">
-                                    <button class="btn btn-block btn-social btn-facebook" (click)="onLoginFacebook()">
-                          <span class="fa fa-facebook"></span>
-                          FACEBOOK
-                        </button>
-                                    <button class="btn btn-block btn-social btn-google" (click)="onLoginGoogle()">
-                          <span class="fa fa-google"></span>
-                          GOOGLE
-                        </button>
-                                </div>
-                            </form>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw=="
+    crossorigin="anonymous">
+</head>
 
-                        </div>
-                    </div>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 ">
+        <form class="form-horizontal">
+          <fieldset>
+            <legend>Registrate para viajar</legend>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Name (Full name)">Ingresa tu nombre completo</label>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-user">
+                    </i>
+                  </div>
+                  <input id="Name (Full name)" name="Name (Full name)" type="text" placeholder="Nombre completo"
+                    class="form-control input-md">
                 </div>
+              </div>
             </div>
-        </div>
+
+            <!-- File Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Upload photo">Sube tu foto</label>
+              <div class="col-md-4">
+                <input id="Upload photo" name="Upload photo" class="input-file" type="file">
+              </div>
+            </div>
+
+
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Phone number ">Introduce tu número de telefono </label>
+              <div class="col-md-4">
+                <div class="input-group othertop">
+                  <div class="input-group-addon">
+                    <i class="fa fa-mobile fa-1x" style="font-size: 20px;"></i>
+                  </div>
+                  <input id="Phone number " name="Secondary Phone number " type="text"
+                    placeholder=" Número de teléfono " class="form-control input-md">
+                </div>
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Email Address">Email Address</label>
+              <div class="col-md-4">
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-envelope-o"></i>
+                  </div>
+                  <input id="Email Address" name="Email Address" type="text" placeholder="Email Address"
+                    class="form-control input-md">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="Password">Contraseña</label>
+                <div class="col-md-4">
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="fa fa-envelope-o"></i>
+                    </div>
+                    <input id="Password" name="Password" type="text" placeholder="Password"
+                      class="form-control input-md">
+                  </div>
+                </div>
+              </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label"></label>
+              <div class="col-md-4">
+                <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-thumbs-up"></span> Regístrate</a>
+                <a href="#" class="btn btn-danger" value=""><span class="glyphicon glyphicon-remove-sign"></span>
+                  Eliminar</a>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="col-md-2 hidden-xs">
+        <img src="http://websamplenow.com/30/userprofile/images/avatar.jpg" class="img-responsive img-thumbnail ">
+      </div>
     </div>
-</section> -->
+  </div>
+  <!-- jQuery Version 1.11.1 -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
