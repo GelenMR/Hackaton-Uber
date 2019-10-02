@@ -5,14 +5,14 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyChGcoU3ytf9-a4WwRDf_ZDMUfUX3oxoiM",
-    authDomain: "scl009-hackaton-uber.firebaseapp.com",
-    databaseURL: "https://scl009-hackaton-uber.firebaseio.com",
-    projectId: "scl009-hackaton-uber",
-    storageBucket: "scl009-hackaton-uber.appspot.com",
-    messagingSenderId: "434636384608",
-    appId: "1:434636384608:web:796870372219278ac19605",
-    measurementId: "G-1S2M7J5L1S"
+    apiKey: 'AIzaSyChGcoU3ytf9-a4WwRDf_ZDMUfUX3oxoiM',
+    authDomain: 'scl009-hackaton-uber.firebaseapp.com',
+    databaseURL: 'https://scl009-hackaton-uber.firebaseio.com',
+    projectId: 'scl009-hackaton-uber',
+    storageBucket: 'scl009-hackaton-uber.appspot.com',
+    messagingSenderId: '434636384608',
+    appId: '1:434636384608:web:796870372219278ac19605',
+    measurementId: 'G-1S2M7J5L1S'
   }
 };
 
