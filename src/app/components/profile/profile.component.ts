@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-profile',
@@ -7,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  title = 'Mi perfil';
+
+  constructor(private modalService: NgbModal) {}
+
+   openModal(modal){
+     this.modalService.open(modal);
+
+  }
 
   ngOnInit() {
   }
 
-  title = 'Mi perfil';
+
 }
