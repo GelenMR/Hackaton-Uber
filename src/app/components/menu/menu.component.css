@@ -29,7 +29,7 @@ body {
 }
 
 .profile-usertitle-name {
-  color: #5a7391;
+  color: #151616;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 7px;
@@ -37,7 +37,7 @@ body {
 
 .profile-usertitle-job {
   text-transform: uppercase;
-  color: #5b9bd1;
+  color: #111111;
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 15px;
@@ -85,7 +85,7 @@ body {
 
 .profile-usermenu ul li a:hover {
   background-color: #fafcfd;
-  color: #5b9bd1;
+  color: #0a0a0a;
 }
 
 .profile-usermenu ul li.active {
@@ -93,9 +93,8 @@ body {
 }
 
 .profile-usermenu ul li.active a {
-  color: #5b9bd1;
+  color: #050505;
   background-color: #f6f9fb;
-  border-left: 2px solid #5b9bd1;
   margin-left: -2px;
 }
 
@@ -110,7 +109,8 @@ body {
 /*calificacion*/
 .ec-stars-wrapper {
 	font-size: 0;
-	display: inline-block;
+  display: inline-block;
+  text-align: center
 }
 .ec-stars-wrapper a {
 	text-decoration: none;
@@ -123,11 +123,37 @@ body {
 }
 
 .ec-stars-wrapper:hover a {
-	color: rgb(39, 130, 228);
+	color: rgb(23, 23, 24);
 }
 /*El selector de hijo*/
 .ec-stars-wrapper > a:hover ~ a {
 	color: #888;
+}
+
+
+/*sidebar*/
+#sidebar {
+  position: initial;
+  right: 0;
+  height: 100%;
+  z-index: 9000;
+  background-color: rgba(255,255,255,0.6);
+  width: 50%;
+  overflow-y: scroll !important;
+}
+
+ul {
+  margin: 10px;
+}
+
+
+body {
+  padding-top: 50px;
+  position: relative;
+}
+
+pre {
+  tab-size: 8;
 }
 
 
