@@ -12,6 +12,8 @@ import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MainComponent } from './components/main/main.component';
+import { PreferencesComponent } from './components/preferences/preferences.component'
+import { SettingComponent } from './components/setting/setting.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
@@ -25,7 +27,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LoginComponent,
     ProfileComponent,
     MenuComponent,
-    MainComponent
+    MainComponent, 
+    SettingComponent,
+    PreferencesComponent
   ],
   imports: [
     BrowserModule,

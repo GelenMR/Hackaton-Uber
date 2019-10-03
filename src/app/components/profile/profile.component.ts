@@ -10,13 +10,6 @@ export class ProfileComponent implements OnInit {
 
   title = 'Mi perfil';
 
-  constructor(private modalService: NgbModal) {}
-
-   openModal(modal){
-     this.modalService.open(modal);
-
-  }
-
   ngOnInit() {
   }
 

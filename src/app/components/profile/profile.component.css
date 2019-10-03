@@ -7,7 +7,7 @@
       text-align: center;
   }
   
-  .photograph-profile,  .title {
+  title {
       margin-bottom: 1.7em;
   }
   
@@ -27,31 +27,7 @@
       margin-bottom: 2em;
   }
   
-  .trip {
-      margin-bottom: 1.8em;
-  }
-  
-  .switch, .open-modal-btn {
-      margin-bottom: 1em;
-  }
-  
-  .open-modal-btn {
-      font-size: 1em;
-      width: 12em;
-      height: 2em;
-      display: flex; 
-      align-items: center; 
-      justify-content: center;
-  }
-  
   .logout, .delete-acount {
       margin-bottom: 2em;
   }
   
-  @media (max-width: 400px) { 
-      .gmail, .facebook {
-          width: 2em;
-          height: 2em;
-      }
-  
-  }

@@ -1,0 +1,23 @@
+.arrow-back {
+    filter: invert(100%);
+    width: 1em;
+  }
+
+.title {
+    margin-bottom: 1.7em;
+}
+
+.title h1 {
+font-size: 2em;
+}
+
+.line {
+    border-top: .1em solid rgb(196, 192, 192);
+    background-color: rgb(172, 172, 172);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+p{
+    color: grey;
+}
