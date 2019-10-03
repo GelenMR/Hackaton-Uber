@@ -1,24 +1,62 @@
-.title, .photograph-profile, .trip{
-    text-align: center;
+.arrow-back {
+    filter: invert(100%);
+    width: 1em;
+  }
+  
+  .photograph-profile, .trip{
+      text-align: center;
+  }
+  
+  .photograph-profile,  .title {
+      margin-bottom: 1.7em;
+  }
+  
+  .gmail, .facebook {
+      width: 3em;
+      height: 3em;
+  }
+  
+  .name, .celphone, .email, .pass {
+      margin-bottom: .8em;
+  }
+  
+  .line {
+      border: .1em solid black;
+      width: 82.5%;
+      margin-top: 2em;
+      margin-bottom: 2em;
+  }
+  
+  .trip {
+      margin-bottom: 1.8em;
+  }
+  
+  .switch {
+      margin-bottom: 1em;
+  }
+  
+  .open-modal-btn {
+      margin-bottom: 2em;
+  }
+
+  .open-modal-btn {
+      font-size: 1em;
+      width: 12em;
+      height: 2em;
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+  
+  }
+
+  .logout, .delete-acount {
+    margin-bottom: 2em;
 }
 
-.gmail, .facebook {
-    width: 3em;
-    height: 3em;
-}
-
-.name-gmail, .celphone-o, .email-facebook, .pass {
-    margin-bottom: .8em;
-}
-
-.line {
-    border: .1em solid black;
-    width: 82.5%;
-}
-
-@media (max-width: 400px) { 
-    .gmail, .facebook {
-        width: 2em;
-        height: 2em;
-    }
-}
+  @media (max-width: 400px) { 
+      .gmail, .facebook {
+          width: 2em;
+          height: 2em;
+      }
+  
+  }
