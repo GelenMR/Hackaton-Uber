@@ -9,8 +9,10 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { PreferencesComponent } from './components/preferences/preferences.component'
 
 import { AppRoutingModule } from './app-routing.module';
+import { SettingComponent } from './components/setting/setting.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    ProfileComponent
+    ProfileComponent,
+    SettingComponent,
+    PreferencesComponent
   ],
   imports: [
     BrowserModule,

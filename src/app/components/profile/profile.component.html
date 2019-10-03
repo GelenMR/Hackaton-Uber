@@ -1,8 +1,6 @@
 <div class="col-sm-12 col-md-12 bg-dark text-light title">
-  <h1>      
-    <img class="arrow-back" src="../assets/img-profile/arrow-back.png" alt="atrás">
-    {{title}}
-  </h1>
+  <h1>      <img class="arrow-back" src="../assets/img-profile/arrow-back.png" alt="atrás">
+    {{title}}</h1>
 </div>
 
 <div class="container">
@@ -24,7 +22,7 @@
     <div class="row">
       <!-- teléfono celular -->
       <div class="col-10 offset-1">
-      <h6>Número móvil</h6>
+      <h6>Teléfono</h6>
     </div>
       <input class="col-10 offset-1 form-control celphone" type="text" placeholder="Número celular">
     </div>
@@ -32,13 +30,13 @@
     <div class="row">
       <!-- correo -->
       <div class="col-10 offset-1">
-      <h6>email</h6>
+      <h6>Email</h6>
     </div>
       <input class="col-10 offset-1 form-control email" type="email" placeholder="Correo">
     </div>
     <div class="row">
         <div class="col-10 offset-1">
-      <h6>contraseña</h6>
+      <h6>Contraseña</h6>
     </div>
       <input class="col-10 offset-1 form-control pass" type="password" placeholder="contraseña">
     </div>
@@ -46,66 +44,12 @@
 
   <div class="offset-1 line"></div>
 
-  <section class="row">
-    <div class="col-12 trip">
-      <h3>Personaliza tu viaje</h3>
-      <p>Elije en qué condiciones quieres que se realice tu viaje.</p>
-    </div>
-
-    <!-- form switch -->
-    <div class="col-11 offset-1 custom-switch switch">
-        <input type="checkbox" class="custom-control-input" id="air-conditioning">
-      <label class="custom-control-label" for="air-conditioning">Aire acondicionado</label>
-    </div>
-    <div class="col-11 offset-1 custom-switch switch">
-      <input type="checkbox" class="custom-control-input" id="conversation">
-      <label class="custom-control-label" for="conversation">Conversación</label>
-    </div>
-    <div class="col-11 offset-1 custom-switch switch">
-      <input type="checkbox" class="custom-control-input" id="special-assistance">
-      <label class="custom-control-label" for="special-assistance">Asistencia especial</label>
-    </div>
-    <div class="col-11 offset-1 custom-switch switch">
-      <input type="checkbox" class="custom-control-input" id="help">
-      <label class="custom-control-label" for="help">ayuda para subir y bajar</label>
-    </div>
-    <div class="col-11 offset-1 custom-switch switch">
-      <input type="checkbox" class="custom-control-input" id="route-summary">
-      <label class="custom-control-label" for="route-summary">Resumen del viaje a mi correo
-      </label>
-    </div> 
-    <div class="col-11 offset-1 btn-driver">
-    <button class="btn btn-lg btn-outline-dark open-modal-btn" (click)="openModal(modalConductor)">Género del conductor</button>
-  </div> 
-  </section>
-
   <section class="lave">
     <div class="col-11 offset-1 logout">
-      <a href="">cerrar sesión</a>
+      <a href="">Cerrar sesión</a>
     </div>
     <div class="col-11 offset-1 delete-acount">
       <a href="" class="text-danger">Eliminar cuenta</a>
     </div>
   </section>
 </div>
-
-<ng-template #modalConductor class="row align-items-end modal-driver">
-  <div class="modal-header">
-    <h4 class="modal-title">
-      Género del conductor</h4>
-  </div>
-  <div class="modal-body">
-    <div class="flex-column btn-group btn-group-toggle" ngbRadioGroup name="radioBasic">
-      <label class="driver-gender">
-        <input type="radio" value="female"> Mujer
-      </label>
-      <label class="driver-gender">
-        <input type="radio" value="male"> Hombre
-      </label>
-      <label class="driver-gender">
-        <input type="radio" value="no-matter"> Indiferente
-      </label>
-    </div>
-  </div>
-  <div class="modal-footer"></div>
-</ng-template>
