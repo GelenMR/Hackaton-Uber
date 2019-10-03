@@ -15,6 +15,7 @@ import { MainComponent } from './components/main/main.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    NgbModule
   ],
   providers: [AngularFireAuth],
   bootstrap: [AppComponent]

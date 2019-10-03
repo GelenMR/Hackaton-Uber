@@ -12,7 +12,10 @@ constructor(private afsAuth: AngularFireAuth) { }
   loginMovileUser() {}
   loginGoogleUser() {}
   loginFBUser() {}
-  logoutUser() {}
+
+  logoutUser() {
+    this.afsAuth.auth.signOut();
+  }
 
   isAuth() {
     return this.afsAuth.authState.pipe(map(auth => auth));

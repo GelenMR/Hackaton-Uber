@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   }
 
   onLogout() {
-    this.afAuth.auth.signOut();
+    this.authService.logoutUser();
     this.router.navigate(['login']);
   }
 

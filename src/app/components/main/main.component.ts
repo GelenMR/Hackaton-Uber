@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../services/auth.service';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { auth } from 'firebase';
-import { log } from 'util';
+import { auth } from 'firebase/app';
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-main',
@@ -11,7 +11,7 @@ import { log } from 'util';
 })
 export class MainComponent implements OnInit {
 
-  constructor(private authService: AuthService, private afsAuth: AngularFireAuth) { }
+  constructor(private authService: AuthService, private router: Router, private afsAuth: AngularFireAuth) { }
   public isLogged: boolean = false;
 
   ngOnInit() {
@@ -31,7 +31,8 @@ getCurrentUser() {
 }
 
   onLogout() {
-    this.afsAuth.auth.signOut();
+    this.authService.logoutUser();
+    this.router.navigate(['login']);
   }
 
 }
