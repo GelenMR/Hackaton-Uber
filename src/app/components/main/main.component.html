@@ -1,0 +1,9 @@
+<!-- <section class="container m-2" *ngIf=isLogged> -->
+<section class="container m-2">
+    <app-menu></app-menu>
+    <div class="m-1">
+        <input type="text" #address class="form-control" placeholder="¿A dónde vas?" />
+    </div>
+    LOGGED USER: {{isLogged}}
+    <button (click)="onLogout()">Salir</button>
+</section>
