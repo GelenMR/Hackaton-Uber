@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from 'firebase/app';
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-setting',
@@ -7,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingComponent implements OnInit {
   title= 'Configuración';
-  constructor() { }
+  constructor(private authService: AuthService, private router: Router, private afsAuth: AngularFireAuth) { }
 
   ngOnInit() {
   }

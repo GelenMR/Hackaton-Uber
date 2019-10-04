@@ -7,6 +7,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MainComponent } from './components/main/main.component';
 import { SettingComponent } from './components/setting/setting.component';
+import { PreferencesComponent } from './components/preferences/preferences.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -15,6 +16,7 @@ const appRoutes: Routes = [
   { path: 'menu', component: MenuComponent },
   { path: 'main', component: MainComponent },
   { path: 'setting', component: SettingComponent },
+  { path: 'preferences', component: PreferencesComponent },
   { path: '',   redirectTo: '/login', pathMatch: 'full' },
 
 ];

@@ -1,55 +1,55 @@
 <div class="col-sm-12 col-md-12 bg-dark text-light title">
-  <h1>      <img class="arrow-back" src="../assets/img-profile/arrow-back.png" routerLink="/menu" routerLinkActive="active" alt="atrás">
-    {{title}}</h1>
+    <h1> <img class="arrow-back" src="../assets/img-profile/arrow-back.png" routerLink="/main" routerLinkActive="active" alt="atrás"> {{title}}
+    </h1>
 </div>
 
 <div class="container">
 
-  <div class="col-sm-12 col-md-12 photograph-profile">
-    <img src="../assets/img-profile/photograph-profile.png" alt="Photo">
-  </div>
-
-  <section class="personal-and-social-network">
-    <!-- datos personales y redes sociales -->
-    <div class="row">
-      <!-- nombre -->
-      <div class="col-10 offset-1">
-      <h6>Nombre</h6>
-    </div>
-      <input class="col-10 offset-1 form-control name" type="text" placeholder="Nombre de usuario">
+    <div class="col-sm-12 col-md-12 photograph-profile">
+        <img src="../assets/img-profile/photograph-profile.png" alt="Photo">
     </div>
 
-    <div class="row">
-      <!-- teléfono celular -->
-      <div class="col-10 offset-1">
-      <h6>Teléfono</h6>
-    </div>
-      <input class="col-10 offset-1 form-control celphone" type="text" placeholder="Número celular">
-    </div>
+    <section class="personal-and-social-network">
+        <!-- datos personales y redes sociales -->
+        <div class="row">
+            <!-- nombre -->
+            <div class="col-10 offset-1">
+                <h6>Nombre</h6>
+            </div>
+            <input class="col-10 offset-1 form-control name" type="text" placeholder="Nombre de usuario">
+        </div>
 
-    <div class="row">
-      <!-- correo -->
-      <div class="col-10 offset-1">
-      <h6>Email</h6>
-    </div>
-      <input class="col-10 offset-1 form-control email" type="email" placeholder="Correo">
-    </div>
-    <div class="row">
-        <div class="col-10 offset-1">
-      <h6>Contraseña</h6>
-    </div>
-      <input class="col-10 offset-1 form-control pass" type="password" placeholder="contraseña">
-    </div>
-  </section>
+        <div class="row">
+            <!-- teléfono celular -->
+            <div class="col-10 offset-1">
+                <h6>Teléfono</h6>
+            </div>
+            <input class="col-10 offset-1 form-control celphone" type="text" placeholder="Número celular">
+        </div>
 
-  <div class="offset-1 line"></div>
+        <div class="row">
+            <!-- correo -->
+            <div class="col-10 offset-1">
+                <h6>Email</h6>
+            </div>
+            <input class="col-10 offset-1 form-control email" type="email" placeholder="Correo">
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1">
+                <h6>Contraseña</h6>
+            </div>
+            <input class="col-10 offset-1 form-control pass" type="password" placeholder="contraseña">
+        </div>
+    </section>
 
-  <section class="lave">
-    <div class="col-11 offset-1 logout">
-      <a href="" routerLink="/login" routerLinkActive="active">Cerrar sesión</a>
-    </div>
-    <div class="col-11 offset-1 delete-acount" >
-      <a href="" class="text-danger" routerLink="/login" routerLinkActive="active">Eliminar cuenta</a>
-    </div>
-  </section>
+    <div class="offset-1 line"></div>
+
+    <section class="lave">
+        <div class="col-11 offset-1 logout">
+            <a (click)="onLogout()" routerLink="/login" routerLinkActive="active">Cerrar sesión</a>
+        </div>
+        <div class="col-11 offset-1 delete-acount">
+            <a (click)="onLogout()" class="text-danger" routerLink="/login" routerLinkActive="active">Eliminar cuenta</a>
+        </div>
+    </section>
 </div>

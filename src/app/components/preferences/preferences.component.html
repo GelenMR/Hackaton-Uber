@@ -1,61 +1,61 @@
 <div class="col-sm-12 col-md-12 bg-dark text-light title">
-    <h1>      <img class="arrow-back" src="../assets/img-profile/arrow-back.png" alt="atrás">
-      {{title}}</h1>
-  </div>
-  
-  <div class="container">
-<section class="row">
-    <div class="col-12 trip">
-      <h3>Personaliza tu viaje</h3>
-    </div>
-
-    <!-- form switch -->
-    <div class="col-11 offset-1 custom-switch switch">
-        <input type="checkbox" class="custom-control-input" id="air-conditioning">
-      <label class="custom-control-label" for="air-conditioning">Aire acondicionado</label>
-    </div>
-    <div class="col-11 offset-1 custom-switch switch">
-      <input type="checkbox" class="custom-control-input" id="conversation">
-      <label class="custom-control-label" for="conversation">Conversación</label>
-    </div>
-    <div class="col-11 offset-1 custom-switch switch">
-      <input type="checkbox" class="custom-control-input" id="special-assistance">
-      <label class="custom-control-label" for="special-assistance">Asistencia especial</label>
-    </div>
-    <div class="col-11 offset-1 custom-switch switch">
-      <input type="checkbox" class="custom-control-input" id="help">
-      <label class="custom-control-label" for="help">Ayuda para subir y bajar</label>
-    </div>
-    <div class="col-11 offset-1 custom-switch switch">
-      <input type="checkbox" class="custom-control-input" id="route-summary">
-      <label class="custom-control-label" for="route-summary">Resumen del viaje a mi correo
-      </label>
-    </div> 
-    <div class="col-11 offset-1 btn-driver">
-    <button class="btn btn-lg btn-outline-dark open-modal-btn" (click)="openModal(modalDriver)">Género del conductor</button>
-  </div> 
-  </section>
+    <h1> <img class="arrow-back" src="../assets/img-profile/arrow-back.png" routerLink="/setting" alt="atrás"> {{title}}
+    </h1>
 </div>
-  <!-- <div class="offset-1 line"></div> -->
+
+<div class="container">
+    <section class="row">
+        <div class="col-12 trip">
+            <h3>Personaliza tu viaje</h3>
+        </div>
+
+        <!-- form switch -->
+        <div class="col-11 offset-1 custom-switch switch">
+            <input type="checkbox" class="custom-control-input" id="air-conditioning">
+            <label class="custom-control-label" for="air-conditioning">Aire acondicionado</label>
+        </div>
+        <div class="col-11 offset-1 custom-switch switch">
+            <input type="checkbox" class="custom-control-input" id="conversation">
+            <label class="custom-control-label" for="conversation">Conversación</label>
+        </div>
+        <div class="col-11 offset-1 custom-switch switch">
+            <input type="checkbox" class="custom-control-input" id="special-assistance">
+            <label class="custom-control-label" for="special-assistance">Asistencia especial</label>
+        </div>
+        <div class="col-11 offset-1 custom-switch switch">
+            <input type="checkbox" class="custom-control-input" id="help">
+            <label class="custom-control-label" for="help">Ayuda para subir y bajar</label>
+        </div>
+        <div class="col-11 offset-1 custom-switch switch">
+            <input type="checkbox" class="custom-control-input" id="route-summary">
+            <label class="custom-control-label" for="route-summary">Resumen del viaje a mi correo
+      </label>
+        </div>
+        <div class="col-11 offset-1 btn-driver">
+            <button class="btn btn-lg btn-outline-dark open-modal-btn" (click)="openModal(modalDriver)">Género del conductor</button>
+        </div>
+    </section>
+</div>
+<!-- <div class="offset-1 line"></div> -->
 
 <ng-template #modalDriver class="row align-items-end modal-driver">
-  <div class="modal-header">
-    <h4 class="modal-title">
-      Género del conductor</h4>
-    <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
-  </div>
-  <div class="modal-body">
-    <div class="flex-column btn-group btn-group-toggle" ngbRadioGroup name="radioBasic">
-      <label class="driver-gender">
+    <div class="modal-header">
+        <h4 class="modal-title">
+            Género del conductor</h4>
+        <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
+    </div>
+    <div class="modal-body">
+        <div class="flex-column btn-group btn-group-toggle" ngbRadioGroup name="radioBasic">
+            <label class="driver-gender">
         <input type="radio" value="female"> Mujer
       </label>
-      <label class="driver-gender">
+            <label class="driver-gender">
         <input type="radio" value="male"> Hombre
       </label>
-      <label class="driver-gender">
+            <label class="driver-gender">
         <input type="radio" value="no-matter"> Indiferente
       </label>
+        </div>
     </div>
-  </div>
-  <div class="modal-footer"></div>
+    <div class="modal-footer"></div>
 </ng-template>
