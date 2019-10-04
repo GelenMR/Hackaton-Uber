@@ -1,5 +1,5 @@
 <div class="col-sm-12 col-md-12 bg-dark text-light title">
-  <h1>      <img class="arrow-back" src="../assets/img-profile/arrow-back.png" alt="atrás">
+  <h1>      <img class="arrow-back" src="../assets/img-profile/arrow-back.png" routerLink="/menu" routerLinkActive="active" alt="atrás">
     {{title}}</h1>
 </div>
 
@@ -46,10 +46,10 @@
 
   <section class="lave">
     <div class="col-11 offset-1 logout">
-      <a href="">Cerrar sesión</a>
+      <a href="" routerLink="/login" routerLinkActive="active">Cerrar sesión</a>
     </div>
-    <div class="col-11 offset-1 delete-acount">
-      <a href="" class="text-danger">Eliminar cuenta</a>
+    <div class="col-11 offset-1 delete-acount" >
+      <a href="" class="text-danger" routerLink="/login" routerLinkActive="active">Eliminar cuenta</a>
     </div>
   </section>
 </div>
